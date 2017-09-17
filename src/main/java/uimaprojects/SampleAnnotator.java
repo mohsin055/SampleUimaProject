@@ -1,10 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package uimaprojects;
-
 
 import org.apache.uima.fit.component.JCasAnnotator_ImplBase;
 import org.apache.uima.fit.descriptor.TypeCapability;
@@ -15,10 +9,12 @@ import org.apache.uima.jcas.JCas;
 import org.apache.uima.resource.ResourceInitializationException;
 import org.apache.uima.util.Level;
 
+
 @TypeCapability(outputs = { 
     "uimaprojects.token.type.Slang",
     "uimaprojects.token.type.Slang:isSlang",
     "uimaprojects.token.type.Slang:probability"})
+
 public class SampleAnnotator extends JCasAnnotator_ImplBase {
   /**
    * @see JCasAnnotator_ImplBase#process(JCas)
